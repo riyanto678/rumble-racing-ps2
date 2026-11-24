@@ -1,0 +1,24 @@
+PANDUAN BUILD CLOUD (TANPA PC) — RUMBLE RACING PS2 LAUNCHER
+
+Apa yang dibangun:
+- APK launcher Android bertema Rumble Racing.
+- Belum menggabungkan mesin emulator ARMSX2. Emulator tetap dipasang terpisah.
+- Launcher mencoba meneruskan file ISO ke aplikasi yang dapat membukanya. Dukungan ACTION_VIEW bergantung pada versi ARMSX2; jika tidak muncul, impor ISO dari menu ARMSX2.
+
+Langkah melalui HP:
+1. Buat/login akun GitHub.
+2. Buat repository baru, misalnya rumble-racing-ps2-launcher.
+3. Ekstrak ZIP ini di HP.
+4. Upload semua ISI folder proyek (termasuk folder .github; aktifkan tampilkan file tersembunyi bila perlu) ke repository, branch main.
+5. Buka tab Actions di repository. Jika diminta, aktifkan GitHub Actions.
+6. Pilih workflow "Build Rumble Racing PS2 Launcher APK", lalu tekan Run workflow.
+7. Tunggu sampai job selesai dengan tanda hijau.
+8. Buka hasil run, bagian Artifacts, lalu unduh RumbleRacingPS2-debug-apk.
+9. Ekstrak hasil artifact dan instal APK di Android. Jika Android meminta izin instal aplikasi tidak dikenal, izinkan untuk aplikasi browser/file manager yang digunakan.
+
+Catatan:
+- GitHub Actions memerlukan akun dan repository GitHub; saya tidak dapat mengunggah ke akun GitHub milik pengguna dari chat ini.
+- Build ini unsigned debug APK untuk pemasangan pribadi/testing.
+- Jangan mengunggah BIOS atau ISO game ke repository publik. BIOS dan game tidak disertakan.
+- Untuk emulasi, pasang ARMSX2 dari sumber resminya: https://github.com/ARMSX2/ARMSX2/releases
+- Gunakan BIOS hasil dump dari konsol PS2 milik sendiri dan backup ISO dari cakram milik sendiri.
